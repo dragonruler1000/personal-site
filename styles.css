@@ -255,6 +255,7 @@ form{
 }
 
 .bottom{
+  position:static;
   bottom: 0;
 }
 
