@@ -127,7 +127,20 @@ h6 {
   margin-block: 2.33em;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
+main {
+  flex: 1;
+}
 
 /*----------------------------------------------
 ------------------------------------------------
@@ -148,6 +161,9 @@ nav {
   color: red;
 }
 
+.intro-block{
+  background-color: darkolivegreen;
+}
 /*----------------------------------------------
 ------------------------------------------------
 3. Main Body Styles
@@ -157,6 +173,29 @@ aside{
   color: bisque;
   border: 0.2 em;
   border-style: dashed;
+  justify-self: right;
+  justify-content: right;
+}
+
+project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 2rem;
+  width: 100%;
+  max-width: 1000px;
+  box-sizing: border-box;
+}
+
+.project-card{
+  background-color: darkslategray;
+  border: 1px solid #325;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  transition: transform 0.2s ease, background 0.3s ease;
 }
 
 /* CSS Seams to be harder then the html is.*/
@@ -213,4 +252,8 @@ form{
 
 .card {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(36, 66, 178, 0.8);
+}
+
+.bottom{
+  bottom: 0;
 }
