@@ -14,65 +14,91 @@
 </head>
 
 <body>
-    <div class="page-wrapper">
-        <div project-grid>
-            <!-- Add images showing the projects -->
-            <div class="project-card">
-                <h1 id="Emberborn">Emberborn</h1>
-                <p>A mod i have in development that adds a magic system inspired by alomancy from mistborn.
-                    Its still in early development with only 2 metals (pewter and tin) working.</p>
-                <img src="images/blocks.webp" width="49%">
-                <img src="images/items.webp" width="49%">
-                <br>
-                <a href="https://github.com/dragonruler1000/Emberborn">GitHub Repo</a>
-            </div>
+    <main>
+        <div class="page-wrapper, top">
+            <nav>
+                <p>quick links to projects</p>
+                <a href="projects.html#Emberborn">Emberborn</a>
+                <a href="projects.html#Rice">SCP Rice</a>
+                <a href="projects.html#keyboard">Keyboard</a>
+                <a href="projects.html#SBT">Swashbuckled tracker</a>
+                <a href="projects.html#NFC">NFC Card</a>
+                <a href="projects.html#600">factorio mappreset</a>
+            </nav>
+            <div project-grid>
+                <!-- Add images showing the projects -->
+                <div class="project-card">
+                    <h1 id="Emberborn">Emberborn</h1>
+                    <p>A mod i have in development that adds a magic system inspired by alomancy from mistborn.
+                        Its still in early development with only 2 metals (pewter and tin) working.</p>
+                    <img src="images/blocks.webp" width="49%">
+                    <img src="images/items.webp" width="49%">
+                    <br>
+                    <a href="https://github.com/dragonruler1000/Emberborn">GitHub Repo</a>
+                </div>
 
-            <div class="project-card">
-                <h1 id="Rice">SPC Rice</h1>
-                <p>A Hyprland Rice i made for hackclub's riceathon (v3). It is baised on the SCP GOI the SPC (Selachian
-                    Punching Center). <br>
-                    It uses waybar for the panel, Mako for the notification Daemon, Rofi for the app selector/run
-                    dialog,
-                    and has a cusotom fastfetch logo</p>
-                <img src="images/desktop.webp" width="49%">
-                <img src="images/fastfetch.webp" width="49%">
-                <img src="images/hyprlock.webp" width="49%">
-                <img src="images/rofi.webp" width="49%">
-                <br>
-                <a href="https://github.com/dragonruler1000/riceathon/tree/SPC-rice">GitHub Repo</a>
-            </div>
+                <div class="project-card">
+                    <h1 id="Rice">SPC Rice</h1>
+                    <p>A Hyprland Rice i made for hackclub's riceathon (v3). It is baised on the SCP GOI the SPC
+                        (Selachian
+                        Punching Center). <br>
+                        It uses waybar for the panel, Mako for the notification Daemon, Rofi for the app selector/run
+                        dialog,
+                        and has a cusotom fastfetch logo</p>
+                    <img src="images/desktop.webp" width="49%">
+                    <img src="images/fastfetch.webp" width="49%">
+                    <img src="images/hyprlock.webp" width="49%">
+                    <img src="images/rofi.webp" width="49%">
+                    <br>
+                    <a href="https://github.com/dragonruler1000/riceathon/tree/SPC-rice">GitHub Repo</a>
+                </div>
 
-            <div class="project-card">
-                <h1 id="keyboard">Custom Keyboard</h1>
-                <p>My fully custom mechanical keyboard. Designed the PCB, and firmware. Cost ~130 USD</p>
-                <img src="images/PCB.webp" width="49%">
-                <img src="images/case.webp" width="49%">
-                <img src="images/case_with_pcb.webp" width="49%">
-                <img src="images/built-board.webp" width="49%">
-                <a href="https://github.com/dragonruler1000/full-keyboard">GitHub Repo</a>
-            </div>
+                <div class="project-card">
+                    <h1 id="keyboard">Custom Keyboard</h1>
+                    <p>My fully custom mechanical keyboard. Designed the PCB, and firmware. Cost ~130 USD</p>
+                    <img src="images/PCB.webp" width="49%">
+                    <img src="images/case.webp" width="49%">
+                    <img src="images/case_with_pcb.webp" width="49%">
+                    <img src="images/built-board.webp" width="49%">
+                    <a href="https://github.com/dragonruler1000/full-keyboard">GitHub Repo</a>
+                </div>
 
-            <div class="project-card">
-                <h1 id="SBT">Swashbuckled Tracker</h1>
-                <p>A simple web tool i made to help with tracking routes, cash, treasure clues, and ship buyback cost
-                </p>
-                <img src="images/sb.webp" width="49%">
-                <iframe src="https://dragonruler1000.github.io/swashbuckled-tracker/" loading="lazy"
-                    sandbox="allow-scripts allow-same-origin" style="width: 49%; height: 678px;"></iframe>
-                <a href="https://dragonruler1000.github.io/swashbuckled-tracker/">Demo site</a>
-                <a href="https://github.com/dragonruler1000/swashbuckled-tracker">GitHub Repo</a>
+                <div class="project-card">
+                    <h1 id="SBT">Swashbuckled Tracker</h1>
+                    <p>A simple web tool i made to help with tracking routes, cash, treasure clues, and ship buyback
+                        cost
+                    </p>
+                    <img src="images/sb.webp" width="49%">
+                    <iframe src="https://dragonruler1000.github.io/swashbuckled-tracker/" loading="lazy"
+                        sandbox="allow-scripts allow-same-origin" style="width: 49%; height: 678px;"></iframe>
+                    <a href="https://dragonruler1000.github.io/swashbuckled-tracker/">Demo site</a>
+                    <a href="https://github.com/dragonruler1000/swashbuckled-tracker">GitHub Repo</a>
+                </div>
+                <div class="project-card">
+                    <h1 id="NFC">Custom NFC Card</h1>
+                    <p>A custom NFC card i made via kicad to make sharing <i>The Book of Mormon</i> easier. it was
+                        fairly
+                        easy and tought me how nfc chips work and the difrent types of nfc chips</p>
+                    <img src="images/schematic.webp" style="width: 49%;">
+                    <img src="images/nfc-PCB.webp" style="width: 49%;">
+                    <img src="images/3D-model-front.webp" style="width: 49%;">
+                    <img src="images/3D-model-back.webp" style="width: 49%;">
+                    <p>the christast in the arch logo is owned by Intelectial Reserve, Inc</p>
+                </div>
+                <div class="project-card">
+                    <h1 id="600">Factorio 600% resources map-gen-preset</h1>\
+                    <p>A mod i mad that adds 2 map presets that both set the resources (ores, oil, and other stuff like
+                        that that mods add) to 600%. I spent 2 hours working on it so that i can spend like 20 seconds
+                        less setting up a factorio save.</p>
+                        <img src="images/peaceful.webp" style="width: 49%;">
+                        <img src="images/non-peaceful.webp" style="width: 49%;">
+                </div>
             </div>
-            <div class="project-card">
-                <h1 id="NFC">Custom NFC Card</h1>
-                <p>A custom NFC card i made via kicad to make sharing <i>The Book of Mormon</i> easier. it was fairly
-                    easy and tought me how nfc chips work and the difrent types of nfc chips</p>
-                <img src="images/schematic.webp" style="width: 49%;">
-                <img src="images/nfc-PCB.webp" style="width: 49%;">
-                <img src="images/3D-model-front.webp" style="width: 49%;">
-                <img src="images/3D-model-back.webp" style="width: 49%;">
-                <p>the christast in the arch logo is owned by Intelectial Reserve, Inc</p>
+            <div class="fabs" role="group" aria-label="Floating Action Buttons">
+                <a href="projects.html#top" class="fab" aria-label="Floating Action Button">got to top</a>
             </div>
-        </div>
+    </main>
+    <div class="bottom">
         <footer class="bottom">
             <a href="https://www.minecraftchest2.com">Portfolio site</a> © 2026 by <a
                 href="https://github.com/dragonruler1000">Zachariah Jackson</a> is licensed under <a
@@ -84,8 +110,8 @@
                 src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt=""
                 style="max-width: 1em;max-height:1em;margin-left: .2em;">
             <p>See <a href="About.html">About</a> for more information on licencing</p>
-            <a href="projects.html">back to top</a>
         </footer>
+    </div>
     </div>
 </body>
 
