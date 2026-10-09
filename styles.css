@@ -57,11 +57,22 @@ border: 1px solid #fff;
 1. Universal Styles
 ------------------------------------------------
 ----------------------------------------------*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+:target {
+  background: black;
+}
+
 body {
   background-color: black;
   font-family: 'Times New Roman', Times, serif;
-  display: block;
+  display: flex;
   margin: 8px;
+  min-height: 100dvh;
+  flex-direction: column;
 }
 
 a:link {
@@ -127,11 +138,13 @@ h6 {
   margin-block: 2.33em;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
 }
+
 .page-wrapper {
   display: flex;
   flex-direction: column;
@@ -161,15 +174,16 @@ nav {
   color: red;
 }
 
-.intro-block{
+.intro-block {
   background-color: darkolivegreen;
 }
+
 /*----------------------------------------------
 ------------------------------------------------
 3. Main Body Styles
 ------------------------------------------------
 ----------------------------------------------*/
-aside{
+aside {
   color: bisque;
   border: 0.2 em;
   border-style: dashed;
@@ -188,7 +202,7 @@ project-grid {
   box-sizing: border-box;
 }
 
-.project-card{
+.project-card {
   background-color: darkslategray;
   border: 1px solid #325;
   padding: 1.5rem;
@@ -210,9 +224,37 @@ project-grid {
 5. Widget Styles
 ------------------------------------------------
 ----------------------------------------------*/
-.email{
+.email {
   color: black;
 }
+
+.fabs {
+  --_viewport-margin: 2.5vmin;
+
+  position: fixed;
+  z-index: var(--layer-1);
+
+  inset-block: auto var(--_viewport-margin);
+  inset-inline: auto var(--_viewport-margin);
+
+  display: flex;
+  flex-direction: column-reverse;
+  place-items: center;
+  gap: var(--_viewport-margin)
+}
+
+.fab {
+  --_size: 1rem;
+
+  padding: calc(var(--_size) / 2);
+  border-radius: var(--radius-round);
+  aspect-ratio: 1;
+  box-shadow: var(--shadow-4);
+
+  background-color: brown;
+  color: aquamarine;
+}
+
 /*----------------------------------------------
 ------------------------------------------------
 6. Footer Styles
@@ -224,7 +266,7 @@ project-grid {
 7. Comments & Form Styles
 ------------------------------------------------
 ----------------------------------------------*/
-form{
+form {
   border: 3px;
   border-style: solid;
   border-color: cadetblue;
@@ -247,15 +289,13 @@ form{
 }
 
 .top {
-  top: 0;
+  /* top: 0; */
 }
 
 .card {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(36, 66, 178, 0.8);
 }
 
-.bottom{
-  position:static;
-  bottom: 0;
+.bottom {
+  padding: 10px;
 }
-
